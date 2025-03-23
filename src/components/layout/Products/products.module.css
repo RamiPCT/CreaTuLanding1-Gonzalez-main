@@ -1,0 +1,116 @@
+.productsContainer {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2b2d42;
+  margin-bottom: 2rem;
+}
+
+.filterButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.filterBtn {
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 25px;
+  background: white;
+  color: #4a4a4a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filterBtn:hover:not(:disabled) {
+  border-color: #4dabf7;
+  color: #4dabf7;
+}
+
+.filterBtn.active {
+  background: #4dabf7;
+  color: white;
+  border-color: #4dabf7;
+}
+
+.filterBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #4dabf7;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+  background: #fff0f0;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 500px;
+}
+
+.error p {
+  color: #ff4d6d;
+  margin-bottom: 1rem;
+}
+
+.retryButton {
+  padding: 0.8rem 1.5rem;
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.retryButton:hover {
+  background: #ff3355;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .filterBtn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .productsGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,131 @@
+.cartPageContainer {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.cartPageTitle {
+  font-size: 2rem;
+  color: #2d2d2d;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cartPageEmpty {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.cartPageEmpty p {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.cartPageShopButton {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: #4dabf7;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.cartPageShopButton:hover {
+  background: #339af0;
+}
+
+/* Estilos para items del carrito */
+.cartPageItem {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.cartPageItemImage {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.cartPageItemDetails {
+  flex: 1;
+}
+
+.cartPageItemDetails h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #2d2d2d;
+}
+
+.cartPageItemDetails p {
+  margin: 0.3rem 0;
+  color: #6c757d;
+}
+
+.cartPageButton {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cartPageButton:hover {
+  background: #ff5252;
+}
+
+/* Sección total y checkout (si la agregas después) */
+.cartTotal {
+  text-align: right;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.cartTotal p {
+  font-size: 1.3rem;
+  color: #2d2d2d;
+  margin-bottom: 1rem;
+}
+
+.checkoutButton {
+  padding: 1rem 2rem;
+  background: #4dabf7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.checkoutButton:hover {
+  background: #339af0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cartPageItem {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .cartPageItemImage {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+  
+  .cartPageTitle {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin-bottom: 150px; /* Ajusta según la altura de tu footer */
+}
+
+.container {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  height:100vh;
+}
+
+/* En tu archivo principal (App.css o similar) */
+body, #root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
